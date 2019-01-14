@@ -19,12 +19,9 @@
     "dotenv": "^6.2.0",
     "download": "^7.1.0",
     "fs-extra": "^7.0.1",
-    "klaw": "^3.0.0",
     "klaw-sync": "^6.0.0",
     "lodash": "^4.17.11",
     "moment": "^2.23.0",
-    "through2": "^3.0.0",
-    "uuid": "^3.3.2",
     "winston": "^3.1.0"
   },
   "devDependencies": {
