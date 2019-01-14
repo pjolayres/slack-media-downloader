@@ -1,23 +1,26 @@
-# Automation Script Boilerplate
+# Slack Media Downloader
 
-A boilerplate for any automation-related scripts.
+A script fo automatically downloading images and videos (excludes everything else) from a slack export.
 
 ## Quick Start
+
+Create a `.env` file in the root directory with the following values:
+```
+BASE_PATH='/path/to/slack/export/directory'
+MATCH='.*.json'
+OUTPUT_PATH='/path/to/download/folder'
+```
+
+Note that the script searches through `BASE_PATH` recursively. Then run the following scripts in the terminal:
 
 ```shell
 npm install
 npm start
 ```
 
-## Features
-1. Barebones boilerplate that executes `index.js` using `npm start`.
-1. Uses `babel-node` for automatic ES6 transpilation.
-1. `.editorconfig` and ESLint for consistent coding standards.
-1. Preconfigured Visual Studio Code debugging.
+The script will then automatically download the media files into `OUTPUT_PATH` in the following format: `YYYY-MM-DD filename.ext`.
 
-## Starting a Project
-1. Clone project into new repository.
-1. Just start coding on `index.js`.
+Progress will show in CLI output whenever an image finishes downloading. Any errors are logged in `./logs`.
 
 ## Visual Studio Debugging
 Press `F5`. Easy as breathing.
